@@ -22,23 +22,37 @@ const Navbar = () => {
           <li>favourite</li>
           <li>lifestyle</li>
         </ul>
+        {/* Mobile Menu Toggle */}
+        <div onClick={() => setIsOpen(!isOpen)} className="mobile-menu">
+          {isOpen ? <X /> : <Menu />}
+        </div>
+
+        {/* Mobile Navigation List (Visible When isOpen is True) */}
+        {isOpen && (
+          <ul className="mobile-nav-list-container">
+            <li>catalogue</li>
+            <li>fashion</li>
+            <li>favourite</li>
+            <li>lifestyle</li>
+          </ul>
+        )}
         <button className="nav-btn">sign up</button>
       </div>
 
       {/* Mobile Menu Toggle */}
-      <div onClick={() => setIsOpen(!isOpen)} className="mobile-menu">
+      {/* <div onClick={() => setIsOpen(!isOpen)} className="mobile-menu">
         {isOpen ? <X /> : <Menu />}
-      </div>
+      </div> */}
 
       {/* Mobile Navigation List (Visible When isOpen is True) */}
-      {isOpen && (
+      {/* {isOpen && (
         <ul className="mobile-nav-list-container">
           <li>catalogue</li>
           <li>fashion</li>
           <li>favourite</li>
           <li>lifestyle</li>
         </ul>
-      )}
+      )} */}
     </nav>
   );
 };
