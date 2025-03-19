@@ -1,0 +1,267 @@
+/* Container for full section */
+.vouchers-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Wrapper to align text and image side by side */
+.vouchers-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  /* gap: 200px; */
+}
+
+/* Text and button container */
+.text-btn-container {
+  flex: 1;
+  max-width: 400px;
+}
+
+.voucher-title {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.voucher-text {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* Store Buttons */
+.btn-img-container {
+  display: flex;
+  gap: 15px;
+}
+
+.store-btn {
+  width: 130px;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+/* Image container */
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ellipses */
+.ellipse-container {
+  position: absolute;
+  top: 80px;
+}
+
+.ellipse {
+  position: absolute;
+}
+
+.ellipse1 {
+  width: 380px;
+  height: auto;
+}
+
+.ellipse5 {
+  width: 330px;
+  height: auto;
+  top: 20px;
+  left: 25px;
+}
+
+.ellipse6 {
+  width: 280px;
+  height: auto;
+  top: 45px;
+  left: 50px;
+}
+
+.ellipse2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ebd96b;
+  right: 10px;
+}
+.ellipse4 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #89807a;
+  right: 350px;
+}
+.ellipse3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #89807a;
+  right: 0px;
+  bottom: 40px;
+}
+
+.ellipse7 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ebd96b;
+  right: 380px;
+  bottom: 50px;
+}
+
+/* Mobile Image */
+.mobile {
+  position: relative;
+  width: 300px;
+  height: auto;
+}
+
+/* media foe mobile */
+
+@media (max-width: 767px) {
+  .vouchers-container {
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .vouchers-item-container {
+    flex-direction: column-reverse;
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .text-btn-container {
+    margin-top: 30px;
+  }
+  .voucher-title {
+    font-size: 25px;
+  }
+
+  .voucher-text {
+    font-size: 12px;
+  }
+
+  .store-btn {
+    width: 90px;
+  }
+  .mobile {
+    width: 200px;
+  }
+
+  .ellipse-container {
+    top: 40px;
+  }
+  .ellipse1 {
+    width: 280px;
+  }
+
+  .ellipse5 {
+    width: 250px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .ellipse6 {
+    width: 200px;
+    top: 40px;
+    left: 40px;
+  }
+
+  .ellipse2 {
+    width: 20px;
+    height: 20px;
+    right: 20px;
+  }
+  .ellipse4 {
+    width: 10px;
+    height: 10px;
+    right: 260px;
+  }
+  .ellipse3 {
+    width: 7px;
+    height: 7px;
+    right: 10px;
+  }
+
+  .ellipse7 {
+    width: 15px;
+    height: 15px;
+    left: 0px;
+    bottom: 25px;
+  }
+}
+
+/* media for tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .vouchers-container {
+    margin: auto;
+  }
+
+  .vouchers-item-container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .voucher-title {
+    font-size: 30px;
+  }
+
+  .store-btn {
+    width: 120px;
+  }
+
+  .mobile {
+    width: 250px;
+  }
+
+  .ellipse-container {
+    top: 60px;
+  }
+
+  .ellipse1 {
+    width: 320px;
+  }
+
+  .ellipse5 {
+    width: 280px;
+    top: 18px;
+    left: 20px;
+  }
+
+  .ellipse6 {
+    width: 230px;
+    top: 40px;
+    left: 35px;
+  }
+
+  .ellipse2 {
+    width: 25px;
+    height: 25px;
+    right: 15px;
+  }
+
+  .ellipse4 {
+    width: 12px;
+    height: 12px;
+    right: 280px;
+  }
+
+  .ellipse3 {
+    width: 8px;
+    height: 8px;
+    right: 10px;
+  }
+
+  .ellipse7 {
+    width: 18px;
+    height: 18px;
+    left: 5px;
+    bottom: 30px;
+  }
+}

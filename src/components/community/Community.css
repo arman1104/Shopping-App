@@ -1,0 +1,91 @@
+.community-container {
+  width: 100%;
+  max-width: 1720px;
+  height: 400px;
+  background-color: #e5c643;
+  text-align: center;
+  padding: 120px;
+}
+
+.community-container h1 {
+  width: 550px;
+  margin: auto;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.community-container p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.input-container input {
+  padding: 15px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+}
+
+.input-container button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* media for mobile */
+@media (max-width: 767px) {
+  .community-container {
+    text-align: start;
+    padding: 50px 20px;
+    margin: 20px auto;
+    height: 350px;
+    width: calc(100% - 30px);
+  }
+
+  .community-container h1 {
+    width: 350px;
+    font-size: 25px;
+  }
+
+  .input-container {
+    margin-top: 50px;
+  }
+
+  .input-container input {
+    padding: 10px;
+  }
+  .input-container button {
+    padding: 7px 15px;
+  }
+}
+
+/* media for tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .community-container {
+    padding: 50px 20px;
+    margin: 20px auto;
+    width: calc(100% - 20px);
+  }
+
+  .input-container {
+    margin-top: 50px;
+  }
+}
