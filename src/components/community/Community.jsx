@@ -10,7 +10,7 @@ const Community = () => {
       <p className="community-para">
         Type your email down below and be young wild generation
       </p>
-      <div class="input-container">
+      <div className="input-container">
         <input type="text" placeholder="Enter your email here" />
         <button>SEND</button>
       </div>
